@@ -1,0 +1,254 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    text-transform: uppercase;
+    width: 100%;
+    max-height: 90px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    /**/
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header__menu {
+    flex: 0 0 40%;
+}
+
+@media (max-width: 1100px) {
+    .header__menu {
+        flex: 0 0 30%;
+    }
+}
+
+
+.menu-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.menu-header__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.menu-header__button span {
+    height: 2px;
+    width: 35px;
+    background-color: #bea67c;
+}
+
+.menu-header__title {
+
+    opacity: 0.5;
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.menu-header__title:hover {
+    opacity: 1;
+
+}
+
+.menu-header__list {
+    width: 300px;
+    padding: 15px;
+    position: absolute;
+    top: 70px;
+    left: -100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition-duration: 0.5s;
+    overflow: auto;
+}
+
+
+.menu-header__list-active {
+    transform: translateX(100vw);
+
+}
+
+@media (max-width: 400px) {
+    .menu-header__list {
+        width: 250px;
+        left: -110vw;
+    }
+
+    .menu-header__list-active {
+        transform: translateX(110vw);
+
+    }
+}
+
+.menu-header__linkbox:not(:first-child) {
+    padding-top: 15px;
+}
+
+.menu-header__link {
+    cursor: pointer;
+    color: #ffffff;
+    transition-duration: 0.3s;
+}
+
+
+
+.menu-header__link:not(:last-child) {
+    padding-bottom: 15px;
+}
+
+
+.menu-header__link a {
+    color: #ffffff;
+    transition-duration: 0.3s;
+}
+
+.menu-header__link a:hover {
+    color: #bea67c;
+}
+
+@media (max-width: 767.98px) {
+
+    .header__menu {
+        flex: 0 0 10%;
+    }
+
+    .menu-header__title {
+        display: none;
+    }
+
+
+    .menu-header__list {
+        padding: 25px;
+    }
+
+    .menu-header__link {
+        font-size: 16px;
+    }
+
+    .menu-header__link:not(:last-child) {
+        padding-bottom: 25px;
+    }
+
+}
+
+
+
+.header__central {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    gap: calc(20px + (100 - 20)*((100vw - 768px)/(1950 - 768)));
+
+    padding-right: 20px;
+    padding-left: calc(15px + (20 - 15)*((100vw - 768px)/(1950 - 768)));
+    /* calc(20px + (590 - 20)*((100vw - 320px)/(1950 - 320)));*/
+
+
+    /*padding-bottom: calc(20px + (100 - 20)*((100vw - 320px)/(1950 - 320)));*/
+}
+
+
+
+.header__title {
+    cursor: pointer;
+}
+
+
+.header__navigation {}
+
+.navigation-header {}
+
+.navigation-header__list-desktop {
+    display: flex;
+    align-items: center;
+    /* gap: calc(20px + (100 - 20)*((100vw - 320px)/(1950 - 320)));*/
+    flex-wrap: wrap;
+}
+
+
+.navigation-header__link a {
+    color: #ffffff;
+}
+
+.navigation-header__link-desktop {
+    opacity: 0.5;
+    font-family: 'Proxima Nova';
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+
+    cursor: pointer;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+
+.navigation-header__link-desktop:not(:last-child) {
+    padding-right: calc(20px + (100 - 20)*((100vw - 992px)/(1950 - 992)));
+}
+
+.navigation-header__link-desktop:hover {
+    opacity: 1;
+}
+
+.header__rigth {
+    display: flex;
+    align-items: center;
+    gap: calc(20px + (100 - 20)*((100vw - 768px)/(1950 - 768)));
+
+}
+
+.header__info {
+
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    opacity: 0.5;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-transform: lowercase;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    color: #ffffff;
+}
+
+.header__info:hover {
+    opacity: 1;
+}
+
+.header__language {
+    font-size: 15px;
+    background-color: black;
+    color: #ffffff;
+    opacity: 0.5;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.header__language:hover {
+    opacity: 1;
+}

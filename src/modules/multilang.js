@@ -59,7 +59,7 @@ export const multilang = () => {
         localStorage.setItem('lang', langSelect.value)
         selectedLanguage = localStorage.getItem('lang');
     }
-    console.log(selectedLanguage);
+
 
 
 
@@ -68,7 +68,7 @@ export const multilang = () => {
 
         localStorage.setItem('lang', langSelect.value)
         selectedLanguage = localStorage.getItem('lang');
-        console.log(selectedLanguage);
+
 
         changeLanguagePack()
         changeOption()

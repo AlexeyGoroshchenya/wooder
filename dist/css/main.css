@@ -5,7 +5,7 @@
 
 .cover {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../img/main/1.png'), url('../img/main/2.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../img/main/1.jpg'), url('../img/main/2.jpg');
     background-repeat: no-repeat;
     background-position: right, left;
     background-size: contain;

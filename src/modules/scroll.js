@@ -17,9 +17,12 @@ export const scroll = () => {
 
         const linkTargetName = target.getAttribute('href').replace('#', '')
         const linkTarget = document.getElementById(linkTargetName)
+        let headerHeight = 90
 
+        if (window.screen.width < 768) { headerHeight = 50 }
 
         if (linkTarget) {
+
 
             animate({
                 duration: 300,
@@ -28,7 +31,7 @@ export const scroll = () => {
                 },
                 draw(progress) {
 
-                    let count = scrollY - (scrollY - (linkTarget.offsetTop - 90)) * progress
+                    let count = scrollY - (scrollY - (linkTarget.offsetTop - headerHeight)) * progress
 
                     window.scrollTo({
                         top: count,

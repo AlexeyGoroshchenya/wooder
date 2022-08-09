@@ -3,6 +3,9 @@ import { isMobile } from './helpers';
 export const burger = () => {
 
     const menu = document.querySelector('.menu-header__list')
+    const openedMenu = document.querySelector('.menu-header__list-active')
+
+    let coordX = null;
 
     const moveMenu = () => {
         menu.classList.toggle('menu-header__list-active')
@@ -59,9 +62,35 @@ export const burger = () => {
         }
 
 
-
-
-
-
     })
+
+    document.addEventListener('pointerdown', (e) => {
+        if (e.target.closest('.menu-header__list')) {
+            coordX = e.clientX;
+        }
+
+
+    }, false)
+
+    document.addEventListener('pointermove', (e) => {
+
+
+
+        if (!coordX) return
+
+        if (e.target.closest('.menu-header__list')) {
+            let touchEnd = e.clientX;
+
+            if (touchEnd < coordX) {
+                moveMenu()
+            }
+
+            coordX = null;
+        }
+
+
+    }, false)
+
+
+
 }

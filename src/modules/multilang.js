@@ -2,7 +2,7 @@ import { db } from "./database"
 
 export const multilang = () => {
     const langSelect = document.querySelector('.header__language')
-    const langElems = document.querySelectorAll('[lang-change]')
+    const langElems = document.querySelectorAll('[data-lang]')
 
     let selectedLanguage = ''
 
@@ -11,7 +11,7 @@ export const multilang = () => {
 
         if (selectedLanguage === 'RU') {
             langElems.forEach((elem) => {
-                let textToTranslate = elem.getAttribute('lang-change')
+                let textToTranslate = elem.dataset.lang
 
                 db.forEach((item) => {
                     if (item.name == textToTranslate) {
@@ -22,7 +22,7 @@ export const multilang = () => {
             })
         } else if (selectedLanguage === 'EN') {
             langElems.forEach((elem) => {
-                let textToTranslate = elem.getAttribute('lang-change')
+                let textToTranslate = elem.dataset.lang
 
                 db.forEach((item) => {
                     if (item.name == textToTranslate) {

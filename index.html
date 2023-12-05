@@ -19,12 +19,12 @@
 		<header class="header">
 			<div class="header__menu menu-header">
 				<div class="menu-header__button"> <span></span><span></span><span></span> </div>
-				<div lang-change="menu" class="menu-header__title">Menu</div>
+				<div data-lang="menu" class="menu-header__title">Menu</div>
 				<div class="menu-header__list">
 					<ul class="menu-header__linkbox">
-						<li class="menu-header__link"><a lang-change="payment" href="#">Payment</a> </li>
-						<li class="menu-header__link"><a lang-change="delivery" href="#">Delivery</a> </li>
-						<li class="menu-header__link"><a lang-change="contacts" href="#">Contacts</a> </li>
+						<li class="menu-header__link"><a data-lang="payment" href="#">Payment</a> </li>
+						<li class="menu-header__link"><a data-lang="delivery" href="#">Delivery</a> </li>
+						<li class="menu-header__link"><a data-lang="contacts" href="#">Contacts</a> </li>
 					</ul>
 				</div>
 			</div>
@@ -33,13 +33,13 @@
 				<nav class="header__navigation navigation-header">
 					<ul class="navigation-header__list navigation-header__list-desktop">
 						<li class="navigation-header__link navigation-header__link-desktop"> <a class="home-link"
-								href="#home" lang-change="home">Home</a>
+								href="#home" data-lang="home">Home</a>
 						</li>
 						<li class="navigation-header__link navigation-header__link-desktop"><a class="products-link"
-								href="#products" lang-change="products">Products</a>
+								href="#products" data-lang="products">Products</a>
 						</li>
 						<li class="navigation-header__link navigation-header__link-desktop"><a href="#about"
-								lang-change="about">About</a>
+								data-lang="about">About</a>
 						</li>
 					</ul>
 
@@ -68,7 +68,7 @@
 					<div class="cover__body">
 						<h1 class="cover__title">wooder</h1>
 						<div class="cover__button button">
-							<p lang-change="learn"> Learn more</p> <img src="dist/img/main/arrow-right.png" alt="">
+							<p data-lang="learn"> Learn more</p> <img src="dist/img/main/arrow-right.png" alt="">
 						</div>
 						<div class="cover__scroll scroll-cover">
 							<div class="scroll-cover__body">
@@ -91,48 +91,48 @@
 				<div class="products__share"><img src="dist/img/products/share27_4380.png" alt="share"
 						class="products__share-btn"></div>
 				<div class="products__container">
-					<div class="products__furniture furniture-products content-block content-block--straightht"
+					<div class="products__furniture furniture-products content-block content-block--straightht hidden"
 						id="furniture">
 						<div class="content-block__number">01<span>.</span></div>
 						<div class="content-block__text furniture-products__text">
-							<h2 class="content-block__title" lang-change="furniture">Furniture</h2>
-							<div class="content-block__description" lang-change="furniture-text">Wooder utilizes
+							<h2 class="content-block__title" data-lang="furniture">Furniture</h2>
+							<div class="content-block__description" data-lang="furniture-text">Wooder utilizes
 								materials otherwise left behind,
 								rendered useless in their original intent. By creating new pieces made of reclaimed
 								barnwood.</div>
-							<div class="content-block__link link"><a href="#" lang-change="learn">Learn more</a></div>
+							<div class="content-block__link link"><a href="#" data-lang="learn">Learn more</a></div>
 						</div>
-						<div class="content-block__image"><img src="dist/img/products/1.png" alt="">
+						<div class="content-block__image"><img src="dist/img/products/1.webp" loading="lazy" alt="">
 						</div>
 					</div>
-					<div class="products__decor decor-products content-block content-block--reverse id=" decor"">
+					<div class="products__decor decor-products content-block content-block--reverse hidden" decor"">
 						<div class="content-block__number">02<span>.</span></div>
 						<div class="content-block__text decor-products__text ">
-							<h2 class="content-block__title content-block__title--reverse" lang-change="decor">Decor
+							<h2 class="content-block__title content-block__title--reverse" data-lang="decor">Decor
 							</h2>
 							<div class="content-block__description content-block__description--reverse"
-								lang-change="decor-text">We make all
+								data-lang="decor-text">We make all
 								types of
 								wooden decor as per design given by
 								Architect,Interior designer, contractor which is suitable your premises.</div>
 							<div class="content-block__link link content-block__link--reverse"><a href="#"
-									lang-change="learn">Learn
+									data-lang="learn">Learn
 									more</a>
 							</div>
 						</div>
 						<div class="content-block__image content-block__image--reverse"> <a href="#"><img
-									src="dist/img/products/2.png" alt=""></a></div>
+									src="dist/img/products/2.webp" loading="lazy" alt=""></a></div>
 					</div>
 
 
-					<div class="products__benefits benefits-products content-block">
+					<div class="products__benefits benefits-products content-block hidden">
 
 						<div class="benefits-products__text content-block__text">
-							<h2 class="content-block__title content-block__title--central" lang-change="quality">wooder
+							<h2 class="content-block__title content-block__title--central" data-lang="quality">wooder
 								–
 								is quality</h2>
 							<div class="content-block__description content-block__description--central"
-								lang-change="quality-text">We create unique
+								data-lang="quality-text">We create unique
 								design objects made of rare wood, specially under the order. Look at the short video
 								about our work.</div>
 
@@ -146,7 +146,7 @@
 										<img src="dist/img/videos/play.png" alt="">
 									</div>
 								</div>
-								<div class="benefits-products__benefit" lang-change="quality-1">Innovative Design</div>
+								<div class="benefits-products__benefit" data-lang="quality-1">Innovative Design</div>
 							</div>
 							<div class="benefits-products__item">
 								<div class="benefits-products__image"><a href="#"><img
@@ -156,7 +156,7 @@
 										<img src="dist/img/videos/play.png" alt="">
 									</div>
 								</div>
-								<div class="benefits-products__benefit" lang-change="quality-2">High-level Skills</div>
+								<div class="benefits-products__benefit" data-lang="quality-2">High-level Skills</div>
 							</div>
 							<div class="benefits-products__item">
 								<div class="benefits-products__image"><a href="#"><img
@@ -166,7 +166,7 @@
 										<img src="dist/img/videos/play.png" alt="">
 									</div>
 								</div>
-								<div class="benefits-products__benefit" lang-change="quality-3">Quality Products</div>
+								<div class="benefits-products__benefit" data-lang="quality-3">Quality Products</div>
 							</div>
 
 
@@ -184,19 +184,19 @@
 
 			<section class="video" id="video">
 				<div class="video__canvas">
-					<div class="video__container">
+					<div class="video__container hidden">
 
 						<div class="video__text content-block__text">
-							<h2 class="content-block__title content-block__title--video" lang-change="video">we Do the
+							<h2 class="content-block__title content-block__title--video" data-lang="video">we Do the
 								design of any
 								complexity
 							</h2>
 							<div class="content-block__description content-block__description--video"
-								lang-change="video-text">This is a team of
+								data-lang="video-text">This is a team of
 								professionals that make the furniture and wood décor high standard. Creating modern
 								designs.
 								Adhering to the global quality standards. And we are doing work with love.</div>
-							<div class="video__button button"><a href="#" lang-change="video-btn">watch video</a>
+							<div class="video__button button"><a href="#" data-lang="video-btn">watch video</a>
 								<img src="dist/img/videos/player6_3749.png" alt="">
 							</div>
 						</div>
@@ -205,17 +205,17 @@
 
 			</section>
 			<section class="about" id="about">
-				<div class="about__container">
-					<div class="about__image"><img src="dist/img/about/4155.png" alt=""></div>
+				<div class="about__container hidden">
+					<div class="about__image"><img src="dist/img/about/4155.webp" loading="lazy" alt=""></div>
 					<div class="about__text content-block__text">
-						<h2 class="content-block__title content-block__title--about" lang-change="about-us">About us
+						<h2 class="content-block__title content-block__title--about" data-lang="about-us">About us
 						</h2>
 						<div class="content-block__description content-block__description--about"
-							lang-change="about-text">We are a team of
+							data-lang="about-text">We are a team of
 							professionals in the wood processing and the creation of wooden furniture of the highest
 							class.</div>
 						<div class="content-block__link link content-block__link--about"><a href="#"
-								lang-change="learn">Learn
+								data-lang="learn">Learn
 								more</a>
 						</div>
 					</div>

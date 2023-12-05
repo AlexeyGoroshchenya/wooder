@@ -5,7 +5,7 @@
 
 .cover {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../img/main/1.jpg'), url('../img/main/2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../img/main/1.webp'), url('../img/main/2.webp');
     background-repeat: no-repeat;
     background-position: right, left;
     background-size: contain;
@@ -469,7 +469,18 @@
     letter-spacing: 0.07em;
     color: #010101;
     position: relative;
+    transition-duration: 0.5s;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 
+    
+}
+
+.hidden .content-block__title {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100px);
 }
 
 .content-block__description {
@@ -479,7 +490,17 @@
     letter-spacing: 0.025em;
     color: #464646;
     position: relative;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition-duration: 0.5s;
+}
 
+.hidden .content-block__description {
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
 }
 
 .content-block__description--reverse,
@@ -567,6 +588,18 @@
 
 .content-block__link {
     position: relative;
+    transition-duration: 0.5s;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+
+    
+}
+
+.hidden .content-block__link {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100px);
 }
 
 @media (min-width: 991.98px) {
@@ -798,7 +831,7 @@
 /*____________________________________________________________________________________________________________________________________*/
 
 .video {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../img/videos/4098.png'), url('../img/videos/splitshire_7483_4431.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../img/videos/4098.png'), url('../img/videos/splitshire_7483_4431.webp');
     background-repeat: no-repeat;
     background-position: center, right, center;
     background-size: cover, contain, cover;

@@ -39,7 +39,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    position: relative;
+
 }
 
 .menu-header__button {
@@ -78,8 +78,10 @@
     width: 300px;
     padding: 15px;
     position: absolute;
-    top: 70px;
-    left: -100vw;
+    top: 100px;
+    left: -20px;
+    opacity: 0;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,8 +92,9 @@
 
 
 .menu-header__list-active {
-    transform: translateX(100vw);
-
+    transform: translateX(40px);
+    visibility: visible;
+    opacity: 1;
 }
 
 @media (max-width: 400px) {

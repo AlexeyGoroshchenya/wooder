@@ -3,9 +3,9 @@ import { isMobile } from './helpers';
 export const burger = () => {
 
     const menu = document.querySelector('.menu-header__list')
-    const openedMenu = document.querySelector('.menu-header__list-active')
+    // const openedMenu = document.querySelector('.menu-header__list-active')
 
-    let coordX = null;
+    // let coordX = null;
 
     const moveMenu = () => {
         menu.classList.toggle('menu-header__list-active')
@@ -41,55 +41,49 @@ export const burger = () => {
     document.body.addEventListener('click', (e) => {
 
 
-
-        if (e.target.closest('.menu-header')) {
-
-            if (!document.querySelector('.menu-header__list-active')) {
-                moveMenu()
-            }
-
-        }
-
-
         if (document.querySelector('.menu-header__list-active')) {
 
-            if (e.target.closest('.menu-header__link') || !e.target.closest('.menu-header')) {
+            if (e.target.closest('.menu-header__link') || !e.target.closest('.menu-header__list') ) {
                 e.preventDefault()
                 moveMenu()
             }
 
 
+        } else  {
+            if (e.target.closest('.menu-header')) {
+                        moveMenu()
+                    }
         }
 
 
     })
 
-    document.addEventListener('pointerdown', (e) => {
-        if (e.target.closest('.menu-header__list')) {
-            coordX = e.clientX;
-        }
+    // document.addEventListener('pointerdown', (e) => {
+    //     if (e.target.closest('.menu-header__list')) {
+    //         coordX = e.clientX;
+    //     }
 
 
-    }, false)
+    // }, false)
 
-    document.addEventListener('pointermove', (e) => {
-
-
-
-        if (!coordX) return
-
-        if (e.target.closest('.menu-header__list')) {
-            let touchEnd = e.clientX;
-
-            if (touchEnd < coordX) {
-                moveMenu()
-            }
-
-            coordX = null;
-        }
+    // document.addEventListener('pointermove', (e) => {
 
 
-    }, false)
+
+    //     if (!coordX) return
+
+    //     if (e.target.closest('.menu-header__list')) {
+    //         let touchEnd = e.clientX;
+
+    //         if (touchEnd < coordX) {
+    //             moveMenu()
+    //         }
+
+    //         coordX = null;
+    //     }
+
+
+    // }, false)
 
 
 

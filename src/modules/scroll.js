@@ -53,7 +53,7 @@ export const scroll = () => {
 
             let elemBorder = el.getBoundingClientRect().top + scrollY - viewportHeigth / 2
 
-            let scrollBorder = (elemBorder < documentHeigth - viewportHeigth) ? elemBorder : (documentHeigth - viewportHeigth - viewportHeigth / 2);
+            let scrollBorder = (elemBorder < documentHeigth - viewportHeigth) ? elemBorder : (documentHeigth - viewportHeigth - viewportHeigth / 2 - 50);
 
             scrollTextActivationBorders.push(scrollBorder)
         })

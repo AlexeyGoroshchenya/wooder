@@ -845,7 +845,7 @@
 .video__canvas {
     width: 90%;
     height: calc(100vh - 200px);
-    overflow: auto;
+    /* overflow: auto; */
 
     border: 2px solid #6a5e4a;
 
